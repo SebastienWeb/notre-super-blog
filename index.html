@@ -10,10 +10,91 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Notre super Blog</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <main role="main">
+      <section class="articles">
+        <div class="pictogramme">
+          <img src="./assets/images/pictogrammeRead.svg" alt="Pictogramme" />
+        </div>
+        <h1>NOTRE SUPER BLOG</h1>
+        <p>
+          Découvrez nos derniers articles, lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Mauris nec lacus non felis volutpat
+          molestie. Suspendisse eget tempus quam. Class aptent taciti sociosqu
+          ad
+        </p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/computer.png" alt="Computer" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                nec lacus non felis volutpat molestie. Suspendisse adipiscing
+                elit. Mauris nec lacus...
+              </p>
+              <div class="date">
+                <span
+                  ><img src="./assets/images/horloge.svg" alt="Horloge"
+                /></span>
+                <span class="spacing">10/10/2022</span>
+              </div>
+              <!-- </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div> -->
+            </div>
+          </div>
+        </div>
+        <div class="containerArrows">
+          <div class="arrows swiper-button-prev">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_226)">
+                <path
+                  d="M14.0318 23.6359C15.139 22.5288 20.5294 17.1381 21.731 15.9365C22.4938 15.1737 23.7306 15.1739 24.4932 15.9365C25.256 16.6993 25.256 17.936 24.4932 18.6987L20.1449 23.0469L34.6355 23.0469C35.7142 23.0469 36.5886 23.9213 36.5886 25C36.5886 26.0787 35.7142 26.9531 34.6355 26.9531L20.1449 26.9531L24.4931 31.3012C25.2559 32.064 25.2559 33.3007 24.4931 34.0634C23.7303 34.8261 22.4936 34.8262 21.7309 34.0634C20.669 33.0015 15.0723 27.4046 14.0335 26.3657C13.2874 25.6019 13.2944 24.3909 14.0318 23.6359ZM1.26671e-06 35.5105L3.10443e-06 14.4894C3.68822e-06 7.81172 4.52842 4.42051 4.82208 4.00439C7.40411 1.42207 10.8375 -3.42369e-06 14.4895 -3.10443e-06L35.5106 -1.26671e-06C39.1625 -9.47444e-07 42.5959 1.42217 45.178 4.00449C45.4683 4.41582 50 7.81104 50 14.4895L50 35.5105C50 42.1883 45.4716 45.5795 45.1779 45.9956C42.5959 48.5778 39.1625 50 35.5105 50L14.4895 50C10.8375 50 7.4041 48.5778 4.82198 45.9955C4.53174 45.5842 6.82862e-07 42.189 1.26671e-06 35.5105ZM3.90625 35.5105C3.90625 40.404 7.28721 42.8204 7.58418 43.2334C7.58418 43.2335 7.58418 43.2335 7.58418 43.2335C9.42861 45.078 11.881 46.0937 14.4895 46.0937L35.5105 46.0937C38.119 46.0937 40.5714 45.078 42.4158 43.2335C42.7235 42.8056 46.0938 40.43 46.0938 35.5105L46.0938 14.4895C46.0938 9.596 42.7128 7.17959 42.4158 6.7666C40.5714 4.92197 38.119 3.90625 35.5106 3.90625L14.4895 3.90625C11.881 3.90625 9.42862 4.92197 7.58418 6.7665C7.27647 7.19443 3.90625 9.57001 3.90625 14.4894L3.90625 35.5105Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_226">
+                  <rect
+                    width="50"
+                    height="50"
+                    fill="white"
+                    transform="translate(50 50) rotate(-180)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="arrows swiper-button-next">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35.9682 26.3641C34.861 27.4712 29.4706 32.8619 28.269 34.0635C27.5063 34.8263 26.2694 34.8261 25.5068 34.0635C24.744 33.3007 24.744 32.064 25.5068 31.3013L29.8551 26.9531H15.3645C14.2858 26.9531 13.4114 26.0787 13.4114 25C13.4114 23.9213 14.2858 23.0469 15.3645 23.0469H29.8551L25.5069 18.6988C24.7441 17.936 24.7441 16.6993 25.5069 15.9366C26.2697 15.1739 27.5064 15.1738 28.2691 15.9366C29.331 16.9985 34.9277 22.5954 35.9665 23.6343C36.7126 24.3981 36.7056 25.6091 35.9682 26.3641ZM50 14.4895V35.5105C50 42.1883 45.4716 45.5795 45.1779 45.9956C42.5959 48.5779 39.1625 50 35.5105 50H14.4895C10.8375 50 7.4041 48.5778 4.82197 45.9955C4.53174 45.5842 0 42.189 0 35.5105V14.4895C0 7.81172 4.52842 4.42051 4.82207 4.00439C7.4041 1.42217 10.8375 0 14.4895 0H35.5105C39.1625 0 42.5959 1.42217 45.178 4.00449C45.4683 4.41582 50 7.81103 50 14.4895ZM46.0938 14.4895C46.0938 9.59599 42.7128 7.17959 42.4158 6.7666C42.4158 6.7665 42.4158 6.7665 42.4158 6.7665C40.5714 4.92197 38.119 3.90625 35.5105 3.90625H14.4895C11.881 3.90625 9.42861 4.92197 7.58418 6.7665C7.27646 7.19443 3.90625 9.57002 3.90625 14.4895V35.5105C3.90625 40.404 7.28721 42.8204 7.58418 43.2334C9.42861 45.078 11.881 46.0938 14.4895 46.0938H35.5105C38.119 46.0938 40.5714 45.078 42.4158 43.2335C42.7235 42.8056 46.0938 40.43 46.0938 35.5105V14.4895Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/main.js" defer></script>
   </body>
 </html>
