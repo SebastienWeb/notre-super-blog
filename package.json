@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch ./assets/scss/main.scss:./public/css/main.css --style compressed",
+    "prod": "postcss ./public/css/main.css --use autoprefixer --replace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastienWeb/notre-super-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastienWeb/notre-super-blog/issues"
+  },
+  "homepage": "https://github.com/SebastienWeb/notre-super-blog#readme",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}

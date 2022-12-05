@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+*,
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next:after {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+  }
+}

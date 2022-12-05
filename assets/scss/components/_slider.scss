@@ -1,0 +1,52 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+@mixin slider {
+  .swiper {
+    @include desktop {
+      width: 75%;
+    }
+    .swiper-slide {
+      background-color: white;
+      border-radius: 10px;
+      height: 415px;
+      overflow: hidden;
+      position: relative;
+      @include desktop {
+        width: 300px !important;
+      }
+      &:hover p {
+        color: $secondary;
+      }
+      &:hover .img {
+        transform: scale(1.1);
+      }
+
+      .img {
+        transition: transform 250ms ease-in-out;
+        width: 100%;
+      }
+      p {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        padding: 20px 20px 0 20px;
+        text-align: left;
+        transition: color 250ms ease-in-out;
+      }
+      .date {
+        align-items: center;
+        display: flex;
+        padding: 39px 0 0 20px;
+        span {
+          display: block;
+          text-align: left;
+        }
+        .spacing {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

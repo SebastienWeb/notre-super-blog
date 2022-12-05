@@ -4,10 +4,10 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   lazy: true,
   grabCursor: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   spaceBetween: 30,
 
   // If we need pagination
@@ -21,6 +21,12 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     400: {
       slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
     },
   },
 });
