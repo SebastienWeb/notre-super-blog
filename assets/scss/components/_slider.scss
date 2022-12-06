@@ -4,17 +4,14 @@
 @mixin slider {
   .swiper {
     @include desktop {
-      width: 75%;
+      width: 70%;
     }
     .swiper-slide {
       background-color: white;
       border-radius: 10px;
-      height: 415px;
+      height: 440px;
       overflow: hidden;
       position: relative;
-      @include desktop {
-        width: 300px !important;
-      }
       &:hover p {
         color: $secondary;
       }
